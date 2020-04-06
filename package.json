@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-netlify-cms-starter",
+  "name": "Gaya Experience",
   "version": "1.0.0",
-  "description": "A very Spartan boilerplate for using Netlify CMS/static content files with Nuxt.js.",
+  "description": "Bring me your challenge so we can grow together.",
   "author": "Henry Desroches <yo@henry.codes> (https://henry.codes)",
   "private": true,
   "scripts": {

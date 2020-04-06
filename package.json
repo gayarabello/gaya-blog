@@ -1,8 +1,8 @@
 {
-  "name": "Gaya Experience",
+  "name": "nuxt-netlify-cms-starter",
   "version": "1.0.0",
-  "description": "Bring me your challenge so we can grow together.",
-  "author": "Henry Desroches <yo@henry.codes> (https://henry.codes)",
+  "description": "Bring me your challenge so we can grow together",
+  "author": "Gaya Rabello",
   "private": true,
   "scripts": {
     "dev": "nuxt",

@@ -58,7 +58,11 @@
         <v-col cols="12">
           <h2 class="my-6">Skillset</h2>
           <v-row class="align-center">
-            <img class="ml-2" src="~/assets/images/icons/ux.png" width="32px" />
+            <img
+              class="ml-2"
+              src="~/assets/images/icons/ux_icon.png"
+              width="32px"
+            />
             <h5 class="my-6 ml-2">user experience</h5>
           </v-row>
           <p>

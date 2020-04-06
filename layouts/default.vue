@@ -1,55 +1,93 @@
 <template>
-  <div class="container">
+  <v-app light>
+    <v-app-bar flat height="80px" style="max-height: 80px;">
+      <v-row class="align-center content-container justify-space-between">
+        <v-col>
+          <nuxt-link class="logo" to="/">Gaya </nuxt-link>
+        </v-col>
+        <div>
+          <nuxt-link class="nav-item" to="/me">
+            <span>
+              Me
+            </span>
+          </nuxt-link>
+          <nuxt-link class="nav-item" to="/blog"><span> Blog </span></nuxt-link>
+          <nuxt-link class="nav-item" :to="{ path: '/', hash: 'contact' }">
+            <span> Talk </span>
+          </nuxt-link>
+        </div>
+      </v-row>
+    </v-app-bar>
     <nuxt />
-  </div>
+    <v-row id="contact" class="py-8 mb-0" style="background-color: #191919">
+      <v-row class="content-container justify-center justify-space-between">
+        <v-col class="mx-auto" cols="10" md="6">
+          <h5 style="color: grey;" class="py-6">Let's talk</h5>
+          <h2 style="color: white;" class="mb-4">
+            Bring me your challenge so we can grow together
+          </h2>
+          <router-link class="link" to="/contact">
+            talktogaya@gmail.com >
+          </router-link>
+          <p style="color: grey;" class="py-6 d-none d-sm-block">
+            2020 | This website is open source
+          </p>
+        </v-col>
+
+        <v-col class="mx-auto" cols="10" md="4">
+          <h5 style="color: grey;" class="py-6">see also</h5>
+          <ul class="pl-0" style="list-style: none;">
+            <li class="py-4">
+              <router-link class="link" :to="{ path: '/me', hash: 'skillset' }">
+                Skillset
+              </router-link>
+            </li>
+            <li>
+              <router-link class="link" to="/contact">
+                Careat Path
+              </router-link>
+            </li>
+            <li class="py-4">
+              <router-link class="link" to="/contact">
+                Case Studies
+              </router-link>
+            </li>
+            <li class="pb-4">
+              <router-link class="link" to="/contact">
+                Personal Projects
+              </router-link>
+            </li>
+            <li>
+              <router-link class="link" to="/blog">
+                Blog
+              </router-link>
+            </li>
+          </ul>
+        </v-col>
+      </v-row>
+    </v-row>
+  </v-app>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<style lang="scss">
+@import '~/assets/css/main.scss';
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
+} */
+
+.nav-item {
+  margin-right: 1rem;
+  color: #333333;
+  text-decoration: none !important;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+.logo {
+  color: #333333;
+  font-size: 2rem;
   text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>

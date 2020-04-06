@@ -50,6 +50,25 @@ export default {
   markdownit: {
     injected: true
   },
+
+  vuetify: {
+    //customVariables: ['~/assets/css/main.scss'],
+    theme: {
+      dark: false,
+      themes: {
+        light: {
+          primary: '#29313a',
+          accent: '#f2551d',
+          secondary: '#7b848e',
+          info: '#4791e6',
+          warning: '#29313a',
+          error: '#29313a',
+          success: '#00c09b'
+        }
+      }
+    }
+  },
+
   /*
    ** Build configuration
    */

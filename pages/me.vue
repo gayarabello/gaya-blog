@@ -11,7 +11,10 @@
           </div>
         </v-col>
         <v-col cols="12" sm="6" class="text-center">
-          <img src="~/assets/images/me.jpg" width="100%" />
+          <img
+            src="https://res.cloudinary.com/gayarabello/image/upload/c_scale,q_59,w_1200/v1586614650/me_olnfut.jpg"
+            width="100%"
+          />
           <p
             style="font-weight: normal; color: #575757; font-size: 14px; line-height: 150%; letter-spacing: 0.3em; text-transform: uppercase;"
             class="mt-6"

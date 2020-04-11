@@ -51,26 +51,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
-  text-decoration: none !important;
-  height: 360px;
-}
-
-.card:hover {
-  transition: 300ms ease;
-  cursor: pointer;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
-  transform: translateY(-4px);
-}
-
-.thumbnail {
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
 a {
   text-decoration: none !important;
 }

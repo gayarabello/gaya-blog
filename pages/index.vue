@@ -8,7 +8,9 @@
             me your challenge so we can grow together
           </h1>
           <div class="py-6" style="color: $blue;">
-            <nuxt-link class="link py-6" to="/contact"> Hire me ></nuxt-link>
+            <nuxt-link class="link py-6" :to="{ path: '/', hash: 'contact' }">
+              Hire me ></nuxt-link
+            >
           </div>
         </v-col>
         <v-col cols="12" sm="6" class="text-center">
@@ -22,7 +24,7 @@
           </p>
         </v-col>
       </v-row>
-      <v-row class="no-gutters my-12" style="background-color: #fafafa;">
+      <v-row class="no-gutters my-12 off-section">
         <v-row class="content-container align-start align-md-end py-12">
           <v-col cols="12" md="6">
             <h5 class="py-6">career path and values</h5>
@@ -35,12 +37,12 @@
           <v-col cols="12" md="6" class="pb-12">
             <ul>
               <li class="py-4">
-                <router-link class="link" to="/contact">
+                <router-link class="link" to="/me">
                   Get to know my journey >
                 </router-link>
               </li>
               <li>
-                <router-link class="link" to="/contact">
+                <router-link class="link" to="/me">
                   Get to know my personal projects >
                 </router-link>
               </li>
@@ -64,7 +66,6 @@
               height="220px"
               src="https://images.unsplash.com/flagged/photo-1573763955714-e7114250fdaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
             >
-              <!-- <v-card-title> <h4>Ainda estou a aprender</h4></v-card-title> -->
             </v-img>
 
             <v-card-subtitle class="pb-0"> #EDUCATIONAL </v-card-subtitle>
@@ -76,7 +77,11 @@
             </v-card-text>
 
             <v-card-actions class="my-0">
-              <v-btn color="blue" text>
+              <v-btn
+                color="blue"
+                text
+                to="/blog/2020-04-07-educational-platform"
+              >
                 See more
               </v-btn>
             </v-card-actions>
@@ -89,7 +94,6 @@
               height="220px"
               src="https://early.betmarkets.io/wp-content/uploads/2019/04/concept_v4.jpg"
             >
-              <!-- <v-card-title> <h4>Ainda estou a aprender</h4></v-card-title> -->
             </v-img>
 
             <v-card-subtitle class="pb-0"> #FINTECH </v-card-subtitle>
@@ -108,6 +112,49 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-row class="off-section py-12 mt-12">
+        <v-row class="content-container">
+          <v-col class="text-center" cols="12">
+            <h5 class="py-6">blogposts</h5>
+          </v-col>
+          <v-col
+            cols="12"
+            sm="6"
+            md="4"
+            v-for="(blogPost, index) in blogPosts.slice(0, 3)"
+            :key="index"
+          >
+            <div class="card my-2 pa-0">
+              <nuxt-link
+                :to="`blog/${blogPost.slug}`"
+                style="text-decoration: none!important;"
+              >
+                <div
+                  style="text-decoration: none !important;"
+                  class="thumbnail d-flex align-end"
+                  :style="{
+                    backgroundImage: `linear-gradient(rgba(17, 17, 17, 0), #262D34 100%), url(${blogPost.thumbnail})`
+                  }"
+                >
+                  <h3 class="pa-4 text-white">
+                    {{ blogPost.title }}
+                  </h3>
+                </div>
+                <div class="pa-4">
+                  <p>
+                    {{ blogPost.description }}
+                  </p>
+                </div>
+              </nuxt-link>
+            </div>
+          </v-col>
+          <v-col cols="12" class="text-center">
+            <v-btn color="blue" text to="/blog">
+              See all Blogposts
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -125,6 +172,11 @@ export default {
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
       ]
     }
+  },
+  computed: {
+    blogPosts() {
+      return this.$store.state.blogPosts
+    }
   }
 }
 </script>
@@ -132,23 +184,6 @@ export default {
 <style lang="scss">
 @import '~/assets/css/main.scss';
 
-/* .title {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: bold;
-  font-size: 3.2rem;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 2rem;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-} */
 a {
   font-weight: bold;
   color: $blue;

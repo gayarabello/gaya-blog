@@ -18,6 +18,11 @@ html {
   color: #333333;
 }
 
+.image--cover {
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
 .banner {
   background-color: $purple !important;
   color: white;

@@ -13,7 +13,7 @@
         class="content-container justify-space-between align-center px-8 px-md-0"
       >
         <p class="mb-0 banner">
-          I'm donating 8 hours per week of my work to non-profit health-related
+          I'm donating 8 hours per month of my work to non-profit health-related
           projects.
         </p>
         <p class="mb-0 banner">

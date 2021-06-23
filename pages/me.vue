@@ -6,22 +6,12 @@
           <h1>
             About Me
           </h1>
-          <div class="py-6" style="color: $blue;">
-            <nuxt-link class="link py-6" to="/contact"> Hire me ></nuxt-link>
-          </div>
         </v-col>
         <v-col cols="12" sm="6" class="text-center">
           <img
             src="https://res.cloudinary.com/gayarabello/image/upload/c_scale,q_59,w_1200/v1586614650/me_olnfut.jpg"
             width="100%"
           />
-          <p
-            style="font-weight: normal; color: #575757; font-size: 14px; line-height: 150%; letter-spacing: 0.3em; text-transform: uppercase;"
-            class="mt-6"
-          >
-            product designer <br />
-            / ux consultant
-          </p>
         </v-col>
       </v-row>
       <v-row class="content-container py-6">
@@ -128,7 +118,7 @@
           </div>
         </v-col>
       </v-row>
-      <v-row class="no-gutters my-12" style="background-color: #fafafa;">
+      <!--       <v-row class="no-gutters my-12" style="background-color: #fafafa;">
         <v-row class="content-container align-start align-md-end py-12">
           <v-col cols="12" md="6">
             <h5 class="py-6">career path and values</h5>
@@ -148,7 +138,7 @@
             </ul>
           </v-col>
         </v-row>
-      </v-row>
+      </v-row> -->
     </v-container>
   </div>
 </template>

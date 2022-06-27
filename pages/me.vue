@@ -76,32 +76,6 @@
 
           <div class="my-12">
             <v-row class="align-center">
-              <img src="~/assets/images/icons/dribbble.png" height="32px" />
-              <h5 class="my-6 ml-2">visual design</h5>
-            </v-row>
-            <p>
-              Form follows function. Once the flow decisions are made it's time
-              to dress up the product with the brand visual voice.
-              <a class="link" href="/blog"> See here</a> how I create and
-              mantain style guides.
-            </p>
-            <span style="color: #828282">My UI toolset</span>
-            <v-row
-              style="width: 320px"
-              class="justify-space-between align-center my-4 ml-1"
-            >
-              <img
-                src="~/assets/images/icons/visual/sketch.png"
-                height="48px"
-              />
-              <img src="~/assets/images/icons/visual/figma.png" height="44px" />
-              <img src="~/assets/images/icons/visual/xd.png" height="36px" />
-              <img src="~/assets/images/icons/visual/ps.png" height="36px" />
-              <img src="~/assets/images/icons/visual/ai.png" height="36px" />
-            </v-row>
-          </div>
-          <div class="my-12">
-            <v-row class="align-center">
               <img
                 class="ml-2"
                 src="~/assets/images/icons/codepen.png"
@@ -124,6 +98,33 @@
               <img src="~/assets/images/icons/coding/sass.png" height="40px" />
               <img src="~/assets/images/icons/coding/nuxt.png" height="40px" />
               <img src="~/assets/images/icons/coding/vue.png" height="40px" />
+            </v-row>
+          </div>
+
+          <div class="my-12">
+            <v-row class="align-center">
+              <img src="~/assets/images/icons/dribbble.png" height="32px" />
+              <h5 class="my-6 ml-2">visual design</h5>
+            </v-row>
+            <p>
+              Form follows function. Once the flow decisions are made it's time
+              to dress up the product with the brand visual voice.
+              <a class="link" href="/blog"> See here</a> how I create and
+              mantain style guides.
+            </p>
+            <span style="color: #828282">My UI toolset</span>
+            <v-row
+              style="width: 320px"
+              class="justify-space-between align-center my-4 ml-1"
+            >
+              <img
+                src="~/assets/images/icons/visual/sketch.png"
+                height="48px"
+              />
+              <img src="~/assets/images/icons/visual/figma.png" height="44px" />
+              <img src="~/assets/images/icons/visual/xd.png" height="36px" />
+              <img src="~/assets/images/icons/visual/ps.png" height="36px" />
+              <img src="~/assets/images/icons/visual/ai.png" height="36px" />
             </v-row>
           </div>
         </v-col>

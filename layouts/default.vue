@@ -13,8 +13,7 @@
         class="content-container justify-space-between align-center px-8 px-md-0"
       >
         <p class="mb-0 banner">
-          I'm donating 8 hours per week of my work to non-profit health-related
-          projects.
+          Hello, friend
         </p>
         <p class="mb-0 banner">
           <nuxt-link
@@ -23,7 +22,7 @@
             dark
             :to="{ path: '/', hash: 'contact' }"
           >
-            Submit a project</nuxt-link
+            Let's talk</nuxt-link
           >
         </p>
         <!-- <v-btn color="white" text dark> reach me </v-btn> -->
